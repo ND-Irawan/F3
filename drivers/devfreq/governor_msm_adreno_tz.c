@@ -13,6 +13,7 @@
 #include <linux/mm.h>
 #include <linux/msm_adreno_devfreq.h>
 #include <asm/cacheflush.h>
+#include <drm/drm_refresh_rate.h>
 #include <soc/qcom/scm.h>
 #include <soc/qcom/qtee_shmbridge.h>
 #include <linux/of_platform.h>
@@ -462,13 +463,15 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq)
 	} else if (simple_gpu_active) {
 			simple_gpu_algorithm(level, &val, priv);
 	} else {
-#else
-	} else {
-#endif
+
+		unsigned int refresh_rate = dsi_panel_get_refresh_rate();
 
 		scm_data[0] = level;
 		scm_data[1] = priv->bin.total_time;
-		scm_data[2] = priv->bin.busy_time;
+		if (refresh_rate > 60)
+			scm_data[2] = priv->bin.busy_time * refresh_rate / 60;
+		else
+			scm_data[2] = priv->bin.busy_time;
 		scm_data[3] = context_count;
 		__secure_tz_update_entry3(scm_data, sizeof(scm_data),
 					&val, sizeof(val), priv);
