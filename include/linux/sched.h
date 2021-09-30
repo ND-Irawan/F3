@@ -1509,6 +1509,14 @@ struct task_struct {
 	/* Used by LSM modules for access restriction: */
 	void				*security;
 #endif
+<<<<<<< HEAD
+=======
+
+#ifdef CONFIG_SPRD_ROTATION_TASK
+	u64 last_enqueue_ts;
+#endif
+
+>>>>>>> 33f56798f7d6b (sched: Introduce task-rotation feature)
 	/* task is frozen/stopped (used by the cgroup freezer) */
 	ANDROID_KABI_USE(1, unsigned frozen:1);
 
