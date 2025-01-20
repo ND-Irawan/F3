@@ -6090,6 +6090,14 @@ long sched_setaffinity(pid_t pid, const struct cpumask *in_mask)
 		}
 		rcu_read_unlock();
 	}
+
+	/*
+	 * The special/sugov task isn't part of regular bandwidth/admission
+	 * control so let userspace change affinities.
+	 */
+	if (dl_entity_is_special(&p->dl))
+		goto out_free_new_mask;
+
 #endif
 again:
 	cpumask_andnot(&allowed_mask, new_mask, cpu_isolated_mask);
