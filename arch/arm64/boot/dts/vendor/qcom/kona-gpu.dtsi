@@ -122,12 +122,12 @@
 				<26 512 0 MHZ_TO_KBPS(451, 4)>,  /* index=3  */
 				<26 512 0 MHZ_TO_KBPS(547, 4)>,  /* index=4  */
 				<26 512 0 MHZ_TO_KBPS(681, 4)>,  /* index=5  */
-				<26 512 0 MHZ_TO_KBPS(898, 4)>,  /* index=6  */
-				<26 512 0 MHZ_TO_KBPS(1217, 4)>, /* index=7  */
-				<26 512 0 MHZ_TO_KBPS(1553, 4)>, /* index=8  */
-				<26 512 0 MHZ_TO_KBPS(1755, 4)>, /* index=9  */
-				<26 512 0 MHZ_TO_KBPS(2204, 4)>, /* index=10 */
-				<26 512 0 MHZ_TO_KBPS(4085, 4)>; /* index=11 */
+				<26 512 0 MHZ_TO_KBPS(798, 4)>,  /* index=6  */
+				<26 512 0 MHZ_TO_KBPS(1017, 4)>, /* index=7  */
+				<26 512 0 MHZ_TO_KBPS(1353, 4)>, /* index=8  */
+				<26 512 0 MHZ_TO_KBPS(1655, 4)>, /* index=9  */
+				<26 512 0 MHZ_TO_KBPS(2104, 4)>, /* index=10 */
+				<26 512 0 MHZ_TO_KBPS(3285, 4)>; /* index=11 */
 		};
 
 		qcom,gpu-bus-table-1 {
@@ -143,12 +143,12 @@
 				<26 512 0 MHZ_TO_KBPS(451, 4)>,  /* index=3  */
 				<26 512 0 MHZ_TO_KBPS(547, 4)>,  /* index=4  */
 				<26 512 0 MHZ_TO_KBPS(681, 4)>,  /* index=5  */
-				<26 512 0 MHZ_TO_KBPS(868, 4)>,  /* index=6  */
-				<26 512 0 MHZ_TO_KBPS(1417, 4)>, /* index=7  */
-				<26 512 0 MHZ_TO_KBPS(1855, 4)>, /* index=8  */
-				<26 512 0 MHZ_TO_KBPS(2004, 4)>, /* index=9  */
-				<26 512 0 MHZ_TO_KBPS(2692, 4)>, /* index=10 */
-				<26 512 0 MHZ_TO_KBPS(4836, 4)>; /* index=11 */
+				<26 512 0 MHZ_TO_KBPS(768, 4)>,  /* index=6  */
+				<26 512 0 MHZ_TO_KBPS(1017, 4)>, /* index=7  */
+				<26 512 0 MHZ_TO_KBPS(1555, 4)>, /* index=8  */
+				<26 512 0 MHZ_TO_KBPS(1904, 4)>, /* index=9  */
+				<26 512 0 MHZ_TO_KBPS(2492, 4)>, /* index=10 */
+				<26 512 0 MHZ_TO_KBPS(4036, 4)>; /* index=11 */
 		};
 
 		qcom,l3-pwrlevels {
