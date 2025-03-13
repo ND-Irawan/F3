@@ -127,7 +127,7 @@
 				<26 512 0 MHZ_TO_KBPS(1353, 4)>, /* index=8  */
 				<26 512 0 MHZ_TO_KBPS(1655, 4)>, /* index=9  */
 				<26 512 0 MHZ_TO_KBPS(2104, 4)>, /* index=10 */
-				<26 512 0 MHZ_TO_KBPS(3385, 4)>; /* index=11 */
+				<26 512 0 MHZ_TO_KBPS(3885, 4)>; /* index=11 */
 		};
 
 		qcom,gpu-bus-table-1 {
@@ -148,7 +148,7 @@
 				<26 512 0 MHZ_TO_KBPS(1555, 4)>, /* index=8  */
 				<26 512 0 MHZ_TO_KBPS(1904, 4)>, /* index=9  */
 				<26 512 0 MHZ_TO_KBPS(2492, 4)>, /* index=10 */
-				<26 512 0 MHZ_TO_KBPS(4236, 4)>; /* index=11 */
+				<26 512 0 MHZ_TO_KBPS(4536, 4)>; /* index=11 */
 		};
 
 		qcom,l3-pwrlevels {
