@@ -926,8 +926,8 @@
  		BW_OPP_ENTRY(  576, 16); /*  7110 MB/s */
  		BW_OPP_ENTRY(  720, 16); /*  9155 MB/s */
  		BW_OPP_ENTRY(  896, 16); /* 12298 MB/s */
- 		BW_OPP_ENTRY( 1229, 16); /* 14236 MB/s */
- 		BW_OPP_ENTRY( 1880, 16); /* 15258 MB/s */
+ 		BW_OPP_ENTRY( 1329, 16); /* 14236 MB/s */
+ 		BW_OPP_ENTRY( 2180, 16); /* 15258 MB/s */
 	};
 
 	suspendable_llcc_bw_opp_table: suspendable-llcc-bw-opp-table {
@@ -938,8 +938,8 @@
  		BW_OPP_ENTRY(  576, 16); /*  7110 MB/s */
  		BW_OPP_ENTRY(  720, 16); /*  9155 MB/s */
  		BW_OPP_ENTRY(  896, 16); /* 12298 MB/s */
- 		BW_OPP_ENTRY( 1229, 16); /* 14236 MB/s */
- 		BW_OPP_ENTRY( 1880, 16); /* 15258 MB/s */
+ 		BW_OPP_ENTRY( 1329, 16); /* 14236 MB/s */
+ 		BW_OPP_ENTRY( 2180, 16); /* 15258 MB/s */
 	};
 
 	ddr_bw_opp_table: ddr-bw-opp-table {
@@ -954,8 +954,8 @@
  		BW_OPP_ENTRY_DDR( 1453, 4,  0x80); /*  5161 MB/s */
  		BW_OPP_ENTRY_DDR( 1655, 4, 0x180); /*  5931 MB/s */
  		BW_OPP_ENTRY_DDR( 1984, 4, 0x180); /*  6881 MB/s */
- 		BW_OPP_ENTRY_DDR( 2892, 4, 0x180); /*  7980 MB/s */
- 		BW_OPP_ENTRY_DDR( 5090, 4, 0x100); /* 10437 MB/s */
+ 		BW_OPP_ENTRY_DDR( 3092, 4, 0x180); /*  7980 MB/s */
+ 		BW_OPP_ENTRY_DDR( 5490, 4, 0x100); /* 10437 MB/s */
 	};
 
 	suspendable_ddr_bw_opp_table: suspendable-ddr-bw-opp-table {
@@ -971,8 +971,8 @@
  		BW_OPP_ENTRY_DDR( 1453, 4,  0x80); /*  5161 MB/s */
  		BW_OPP_ENTRY_DDR( 1655, 4, 0x180); /*  5931 MB/s */
  		BW_OPP_ENTRY_DDR( 1984, 4, 0x180); /*  6881 MB/s */
- 		BW_OPP_ENTRY_DDR( 2892, 4, 0x180); /*  7980 MB/s */
- 		BW_OPP_ENTRY_DDR( 5090, 4, 0x100); /* 10437 MB/s */
+ 		BW_OPP_ENTRY_DDR( 3092, 4, 0x180); /*  7980 MB/s */
+ 		BW_OPP_ENTRY_DDR( 5490, 4, 0x100); /* 10437 MB/s */
 	};
 
 	llcc_pmu: llcc-pmu@9095000 {
