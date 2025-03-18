@@ -437,19 +437,13 @@ unsigned long schedutil_cpu_util(int cpu, unsigned long util_cfs,
 #ifdef CONFIG_SCHED_WALT
 static unsigned long sugov_get_util(struct sugov_cpu *sg_cpu)
 {
-    struct rq *rq = cpu_rq(sg_cpu->cpu);
-    unsigned long min, max, util = cpu_util_cfs(rq);
+	struct rq *rq = cpu_rq(sg_cpu->cpu);
+	unsigned long max = arch_scale_cpu_capacity(NULL, sg_cpu->cpu);
 
-    if (util < 512) {
-        util = (util * 105) / 100;
-    } else {
-        util = (util * 115) / 100;
-    }
+	sg_cpu->max = max;
+	sg_cpu->bw_dl = cpu_bw_dl(rq);
 
-    util = schedutil_cpu_util(sg_cpu->cpu, util, &min, &max);
-    util = max(util, boost);
-    sg_cpu->bw_min = min;
-    sg_cpu->util = sugov_effective_cpu_perf(sg_cpu->cpu, util, min, max);
+	return stune_util(sg_cpu->cpu, 0, &sg_cpu->walt_load);
 }
 #else
 static unsigned long sugov_get_util(struct sugov_cpu *sg_cpu)
