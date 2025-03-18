@@ -947,13 +947,13 @@
 		BW_OPP_ENTRY_DDR(  200, 4, 0x180); /*   762 MB/s */
  		BW_OPP_ENTRY_DDR(  300, 4, 0x180); /*  1144 MB/s */
  		BW_OPP_ENTRY_DDR(  451, 4, 0x180); /*  1720 MB/s */
- 		BW_OPP_ENTRY_DDR(  547, 4, 0x180); /*  2086 MB/s */
- 		BW_OPP_ENTRY_DDR(  681, 4, 0x180); /*  2597 MB/s */
- 		BW_OPP_ENTRY_DDR(  768, 4, 0x180); /*  2929 MB/s */
- 		BW_OPP_ENTRY_DDR( 1017, 4, 0x180);  /*  3879 MB/s */
- 		BW_OPP_ENTRY_DDR( 1453, 4,  0x80); /*  5161 MB/s */
- 		BW_OPP_ENTRY_DDR( 1655, 4, 0x180); /*  5931 MB/s */
- 		BW_OPP_ENTRY_DDR( 1984, 4, 0x180); /*  6881 MB/s */
+ 		BW_OPP_ENTRY_DDR(  667, 4, 0x180); /*  2086 MB/s */
+ 		BW_OPP_ENTRY_DDR(  831, 4, 0x180); /*  2597 MB/s */
+ 		BW_OPP_ENTRY_DDR(  998, 4, 0x180); /*  2929 MB/s */
+ 		BW_OPP_ENTRY_DDR( 1257, 4, 0x180);  /*  3879 MB/s */
+ 		BW_OPP_ENTRY_DDR( 1553, 4,  0x80); /*  5161 MB/s */
+ 		BW_OPP_ENTRY_DDR( 1755, 4, 0x180); /*  5931 MB/s */
+ 		BW_OPP_ENTRY_DDR( 2084, 4, 0x180); /*  6881 MB/s */
  		BW_OPP_ENTRY_DDR( 3092, 4, 0x180); /*  7980 MB/s */
  		BW_OPP_ENTRY_DDR( 5490, 4, 0x100); /* 10437 MB/s */
 	};
@@ -964,13 +964,13 @@
 		BW_OPP_ENTRY_DDR(  200, 4, 0x180); /*   762 MB/s */
  		BW_OPP_ENTRY_DDR(  300, 4, 0x180); /*  1144 MB/s */
  		BW_OPP_ENTRY_DDR(  451, 4, 0x180); /*  1720 MB/s */
- 		BW_OPP_ENTRY_DDR(  547, 4, 0x180); /*  2086 MB/s */
- 		BW_OPP_ENTRY_DDR(  681, 4, 0x180); /*  2597 MB/s */
- 		BW_OPP_ENTRY_DDR(  768, 4, 0x180); /*  2929 MB/s */
- 		BW_OPP_ENTRY_DDR( 1017, 4, 0x180);  /*  3879 MB/s */
- 		BW_OPP_ENTRY_DDR( 1453, 4,  0x80); /*  5161 MB/s */
- 		BW_OPP_ENTRY_DDR( 1655, 4, 0x180); /*  5931 MB/s */
- 		BW_OPP_ENTRY_DDR( 1984, 4, 0x180); /*  6881 MB/s */
+ 		BW_OPP_ENTRY_DDR(  667, 4, 0x180); /*  2086 MB/s */
+ 		BW_OPP_ENTRY_DDR(  831, 4, 0x180); /*  2597 MB/s */
+ 		BW_OPP_ENTRY_DDR(  998, 4, 0x180); /*  2929 MB/s */
+ 		BW_OPP_ENTRY_DDR( 1257, 4, 0x180);  /*  3879 MB/s */
+ 		BW_OPP_ENTRY_DDR( 1553, 4,  0x80); /*  5161 MB/s */
+ 		BW_OPP_ENTRY_DDR( 1755, 4, 0x180); /*  5931 MB/s */
+ 		BW_OPP_ENTRY_DDR( 2084, 4, 0x180); /*  6881 MB/s */
  		BW_OPP_ENTRY_DDR( 3092, 4, 0x180); /*  7980 MB/s */
  		BW_OPP_ENTRY_DDR( 5490, 4, 0x100); /* 10437 MB/s */
 	};
