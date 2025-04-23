@@ -3682,7 +3682,7 @@ int walt_proc_user_hint_handler(struct ctl_table *table,
 	if (ret || !write || (old_value == sysctl_sched_user_hint))
 		goto unlock;
 
-	walt_irq_work_queue(&walt_migration_irq_work);
+	irq_work_queue(&walt_migration_irq_work);
 
 unlock:
 	mutex_unlock(&mutex);
