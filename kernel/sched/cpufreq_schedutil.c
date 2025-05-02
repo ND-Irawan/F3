@@ -41,7 +41,7 @@ struct sugov_policy {
 	unsigned long rtg_boost_util;
 	unsigned long max;
 
-	raw_spinlock_t		update_lock;
+	raw_spinlock_t		update_lock;	/* For shared policies */
 	u64			last_freq_update_time;
 	s64			min_rate_limit_ns;
 	s64			up_rate_delay_ns;
