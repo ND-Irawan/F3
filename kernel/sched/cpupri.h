@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#define CPUPRI_NR_PRIORITIES	(MAX_RT_PRIO + 1)
+#define CPUPRI_NR_PRIORITIES	(MAX_RT_PRIO + 5)
 
 #define CPUPRI_INVALID		-1
 #define CPUPRI_IDLE		 0
