@@ -87,8 +87,6 @@ static HLIST_HEAD(binder_deferred_list);
 static DEFINE_MUTEX(binder_deferred_lock);
 
 static HLIST_HEAD(binder_devices);
-static DEFINE_SPINLOCK(binder_devices_lock);
-
 static HLIST_HEAD(binder_procs);
 static DEFINE_MUTEX(binder_procs_lock);
 
@@ -6133,16 +6131,7 @@ const struct file_operations binder_fops = {
 
 void binder_add_device(struct binder_device *device)
 {
-	spin_lock(&binder_devices_lock);
 	hlist_add_head(&device->hlist, &binder_devices);
-	spin_unlock(&binder_devices_lock);
-}
-
-void binder_remove_device(struct binder_device *device)
-{
-	spin_lock(&binder_devices_lock);
-	hlist_del_init(&device->hlist);
-	spin_unlock(&binder_devices_lock);
 }
 
 static int __init init_binder_device(const char *name)
@@ -6168,8 +6157,8 @@ static int __init init_binder_device(const char *name)
 		kfree(binder_device);
 		return ret;
 	}
-	
-	binder_add_device(binder_device);
+
+	hlist_add_head(&binder_device->hlist, &binder_devices);
 
 	return ret;
 }
@@ -6322,7 +6311,7 @@ static int __init binder_init(void)
 err_init_binder_device_failed:
 	hlist_for_each_entry_safe(device, tmp, &binder_devices, hlist) {
 		misc_deregister(&device->miscdev);
-		binder_remove_device(device);
+		hlist_del(&device->hlist);
 		kfree(device);
 	}
 
