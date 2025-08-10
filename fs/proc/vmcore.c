@@ -1487,7 +1487,6 @@ int vmcore_add_device_dump(struct vmcoredd_data *data)
 	mutex_unlock(&vmcoredd_mutex);
 
 	vmcoredd_update_size(data_size);
-
 	return 0;
 
 out_err:
