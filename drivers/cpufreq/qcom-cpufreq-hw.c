@@ -519,6 +519,13 @@ static int qcom_cpufreq_hw_read_lut(struct platform_device *pdev,
 		data = readl_relaxed(base_volt + i * lut_row_size);
 		volt = (data & GENMASK(11, 0)) * 1000;
 		vc = data & GENMASK(21, 16);
+		
+		if (i >= 20 && lval < 166) {
+			src = 1;
+			lval = 166;
+			core_count = 4;
+			volt = 1064000;
+		}
 
 		if (src)
 			c->table[i].frequency = c->xo_rate * lval / 1000;
